@@ -181,9 +181,21 @@ body {
   }
 
 .card-header {
+    font-size: 2rem !important;
     background-color: #f6f6f6 !important;
+    color: #737581;
 }
 
 .card-body {
     text-align: left;
+    color: #737581;
+}
+
+.progressbar-text {
+    bottom: 20px !important;
+}
+
+.alert{
+    margin-top: 20px;
+    /* text-align: center; */
 }
