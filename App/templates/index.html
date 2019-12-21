@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- https://bootsnipp.com/snippets/nrDmZ -->
-
 <head>
 
   <meta charset="utf-8">
@@ -22,7 +20,7 @@
 
 
   <!-- JQuery code -->
-  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
   <!-- Custom JavaScript -->
   <script src="{{ url_for('static', filename='js/main.js') }}"></script>
@@ -33,13 +31,11 @@
   <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
   <link href="{{ url_for('static', filename='css/some.css') }}" rel="stylesheet">
 
-
 </head>
 
 <body>
 
   <div class="d-flex" id="wrapper">
-    <!-- Sidebar -->
     <div class=" border-right" id="sidebar-wrapper">
       <div class="sidebar-heading">MC Dashboard </div>
       <div class="list-group list-group-flush">
@@ -51,18 +47,14 @@
         <a href="#" class="list-group-item list-group-item-action ">Status</a>
       </div>
     </div>
-    <!-- /#sidebar-wrapper -->
 
-    <!-- Page Content -->
+
     <div id="page-content-wrapper">
 
       <nav class="navbar navbar-expand-lg navbar-light border-bottom">
         <button class="btn btn-primary" id="menu-toggle">
-          <!-- <span class="navbar-toggler-icon"></span> -->
           Toggle Menu
         </button>
-
-
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -93,27 +85,14 @@
         </div>
       </nav>
 
-      <!-- <h1 class="mt-4">Simple Sidebar</h1>
-      <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on
-        larger screens. When toggled using the button below, the menu will change.</p>
-      <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional,
-        and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the
-        menu when clicked.</p> -->
-
-
       <div class="container-fluid">
-
-        <!-- Content Row -->
         <div class="row">
-
-          <!-- Earnings (Monthly) Card Example -->
           <div class="col-xl-3 col-md-6 mb-4">
             <div class="card border-left-primary shadow h-100 py-2">
               <div class="card-body">
                 <div class="row no-gutters align-items-center">
                   <div class="col mr-2">
                     <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">CPU Usage</div>
-                    <!-- <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div> -->
                     <div id="container" class="circle-report primary cpu"></div>
                   </div>
                   <div class="col-auto">
@@ -124,14 +103,12 @@
             </div>
           </div>
 
-          <!-- Earnings (Monthly) Card Example -->
           <div class="col-xl-3 col-md-6 mb-4">
             <div class="card border-left-success shadow h-100 py-2">
               <div class="card-body">
                 <div class="row no-gutters align-items-center">
                   <div class="col mr-2">
                     <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Memory Usage</div>
-                    <!-- <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div> -->
                     <div id="container" class="circle-report success ram"></div>
                   </div>
                   <div class="col-auto">
@@ -142,14 +119,12 @@
             </div>
           </div>
 
-          <!-- Earnings (Monthly) Card Example -->
           <div class="col-xl-3 col-md-6 mb-4">
             <div class="card border-left-info shadow h-100 py-2">
               <div class="card-body">
                 <div class="row no-gutters align-items-center">
                   <div class="col mr-2">
                     <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Disk Usage</div>
-                    <!-- <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div> -->
                     <div id="container" class="circle-report info disk"></div>
                   </div>
                   <div class="col-auto">
@@ -160,14 +135,12 @@
             </div>
           </div>
 
-          <!-- Earnings (Monthly) Card Example -->
           <div class="col-xl-3 col-md-6 mb-4">
             <div class="card border-left-dark shadow h-100 py-2">
               <div class="card-body">
                 <div class="row no-gutters align-items-center">
                   <div class="col mr-2">
                     <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">Players Online</div>
-                    <!-- <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div> -->
                     <div id="container" class="circle-report dark players"></div>
                   </div>
                   <div class="col-auto">
@@ -188,29 +161,23 @@
           </div>
           <div class="card-body">
             <span>[00:04:41] [Server thread/INFO]: MaxsName was blown up by Creeper</span><br>
-            <span>[00:05:39] [User Authenticator #134/INFO]: UUID of player Pusheen__ is 736243fa-7159-4562-9197-58ceaf6b9a17</span><br>
-            <span>[00:05:39] [Server thread/INFO]: Pusheen__[/98.228.229.167:55753] logged in with entity id 364216 at (-121.34181663878283, 63.0, -319.4847503185605)</span><br>
+            <span>[00:05:39] [User Authenticator #134/INFO]: UUID of player Pusheen__ is
+              736243fa-7159-4562-9197-58ceaf6b9a17</span><br>
+            <span>[00:05:39] [Server thread/INFO]: Pusheen__[/98.228.229.167:55753] logged in with entity id 364216 at
+              (-121.34181663878283, 63.0, -319.4847503185605)</span><br>
             <span>[00:05:39] [Server thread/INFO]: Pusheen__ joined the game</span><br>
             <span>[00:05:48] [Server thread/INFO]: &lt;HockeyRat00&gt; ivan</span><br>
             <span>[00:05:52] [Server thread/INFO]: &lt;HockeyRat00&gt; are u at spawn</span><br>
           </div>
-          <!-- <div class="card-footer text-muted">
-          </div> -->
           <form>
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Command">
             </div>
-          </form> 
+          </form>
         </div>
       </div>
     </div>
   </div>
-  <!-- /#page-content-wrapper -->
-
-  </div>
-  <!-- /#wrapper -->
-
-
 
   <!-- Menu Toggle Script -->
   <script>
