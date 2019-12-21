@@ -24,7 +24,8 @@ $(document).ready(function () {
     };
 
     $('#testbutton').click(function () {
-        setCircle('cpu', 2.8);
+        toastr.error('Bad Input', 'Error')
+        toastr.success('Command executed successfully!', 'Success')
     });
 
     $('#testbutton0').click(function () {
@@ -69,11 +70,12 @@ $(document).ready(function () {
             // stopSpinner('search');
     
             if (data.cod == '200') {
-                alertSuccess('Success', 'Data submitted!');
+                toastr.success('Command executed successfully!', 'Success');
                 console.log(data);
             }
             else {
-                alertError(data.error.type, data.error.msg);
+                toastr.error(data.error.msg, data.error.type);
+                // alertError(data.error.type, data.error.msg);
                 // hideAlerts();
                 // hideElementsForSearch();
                 // $('*').promise().done(function(){
@@ -87,6 +89,7 @@ $(document).ready(function () {
             if(textStatus === 'timeout')
             {
                 alertError('Timeout Error', 'The server took too long to respond. Please try again!');
+                // toastr.error('TimeoutError', 'Error')
             }
             else {
                 alertError('Internal Server Error', 'Something went wrong on our end. Please try again later.');

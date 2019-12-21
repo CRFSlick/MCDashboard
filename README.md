@@ -11,3 +11,5 @@ https://kimmobrunfeldt.github.io/progressbar.js/
 https://bbbootstrap.com/snippets/chartjs-line-chart-72287923
 
 https://bootsnipp.com/snippets/nrDmZ
+
+https://www.jqueryscript.net/other/Highly-Customizable-jQuery-Toast-Message-Plugin-Toastr.html

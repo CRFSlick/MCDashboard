@@ -25,12 +25,14 @@
 
   <!-- Custom JavaScript -->
   <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/toastr.js') }}"></script>
   <script src="{{ url_for('static', filename='js/progressbar.js') }}"></script>
 
   <!-- Custom styles -->
   <link href="{{ url_for('static', filename='css/simple-sidebar.css') }}" rel="stylesheet">
   <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
   <link href="{{ url_for('static', filename='css/some.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/toastr.css') }}" rel="stylesheet">
 
 </head>
 
@@ -86,8 +88,8 @@
         </div>
       </nav>
 
-      <div class="container-fluid">
-        <div class="row">
+      <div class="container-fluid content">
+        <div class="row circle-reports">
           <div class="col-xl-3 col-md-6 mb-4">
             <div class="card border-left-primary shadow h-100 py-2">
               <div class="card-body">
@@ -152,11 +154,57 @@
             </div>
           </div>
         </div>
-        <div class="card text-center">
+        <div class="card log-console text-center">
           <div class="card-header">
             Latest Log
           </div>
-          <div class="card-body">
+          <div class="card-body log overflow-auto">
+            <span>[00:04:41] [Server thread/INFO]: MaxsName was blown up by Creeper</span><br>
+            <span>[00:05:39] [User Authenticator #134/INFO]: UUID of player Pusheen__ is
+              736243fa-7159-4562-9197-58ceaf6b9a17</span><br>
+            <span>[00:05:39] [Server thread/INFO]: Pusheen__[/98.228.229.167:55753] logged in with entity id 364216 at
+              (-121.34181663878283, 63.0, -319.4847503185605)</span><br>
+            <span>[00:05:39] [Server thread/INFO]: Pusheen__ joined the game</span><br>
+            <span>[00:05:48] [Server thread/INFO]: &lt;HockeyRat00&gt; ivan</span><br>
+            <span>[00:05:52] [Server thread/INFO]: &lt;HockeyRat00&gt; are u at spawn</span><br>
+            <span>[00:05:56] [Server thread/INFO]: &lt;Pusheen__ no&gt;</span><br>
+            <span>[00:12:22] [Server thread/INFO]: FasterPilot has made the advancement [We Need to Go
+              Deeper]</span><br>
+            <span>[00:14:24] [Server thread/INFO]: MaxsName was shot by Skeleton</span><br>
+            <span>[00:14:26] [Server thread/INFO]: Pusheen__ lost connection: Disconnected</span><br>
+            <span>[00:14:26] [Server thread/INFO]: Pusheen__ left the game</span><br>
+            <span>[00:15:35] [User Authenticator #135/INFO]: UUID of player Pusheen__ is
+              736243fa-7159-4562-9197-58ceaf6b9a17</span><br>
+            <span>[00:15:35] [Server thread/INFO]: Pusheen__[/98.228.229.167:55767] logged in with entity id 371074 at
+              (-87.04091030278107, 64.0, -535.4326598696261)</span><br>
+            <span>[00:15:35] [Server thread/INFO]: Pusheen__ joined the game</span><br>
+            <span>[00:23:02] [Server thread/INFO]: MaxsName lost connection: Disconnected</span><br>
+            <span>[00:23:02] [Server thread/INFO]: MaxsName left the game</span><br>
+            <span>[00:26:37] [Server thread/INFO]: Pusheen__ fell from a high place</span><br>
+            <span>[00:35:16] [Server thread/INFO]: Pusheen__ lost connection: Disconnected</span><br>
+            <span>[00:04:41] [Server thread/INFO]: MaxsName was blown up by Creeper</span><br>
+            <span>[00:05:39] [User Authenticator #134/INFO]: UUID of player Pusheen__ is
+              736243fa-7159-4562-9197-58ceaf6b9a17</span><br>
+            <span>[00:05:39] [Server thread/INFO]: Pusheen__[/98.228.229.167:55753] logged in with entity id 364216 at
+              (-121.34181663878283, 63.0, -319.4847503185605)</span><br>
+            <span>[00:05:39] [Server thread/INFO]: Pusheen__ joined the game</span><br>
+            <span>[00:05:48] [Server thread/INFO]: &lt;HockeyRat00&gt; ivan</span><br>
+            <span>[00:05:52] [Server thread/INFO]: &lt;HockeyRat00&gt; are u at spawn</span><br>
+            <span>[00:05:56] [Server thread/INFO]: &lt;Pusheen__ no&gt;</span><br>
+            <span>[00:12:22] [Server thread/INFO]: FasterPilot has made the advancement [We Need to Go
+              Deeper]</span><br>
+            <span>[00:14:24] [Server thread/INFO]: MaxsName was shot by Skeleton</span><br>
+            <span>[00:14:26] [Server thread/INFO]: Pusheen__ lost connection: Disconnected</span><br>
+            <span>[00:14:26] [Server thread/INFO]: Pusheen__ left the game</span><br>
+            <span>[00:15:35] [User Authenticator #135/INFO]: UUID of player Pusheen__ is
+              736243fa-7159-4562-9197-58ceaf6b9a17</span><br>
+            <span>[00:15:35] [Server thread/INFO]: Pusheen__[/98.228.229.167:55767] logged in with entity id 371074 at
+              (-87.04091030278107, 64.0, -535.4326598696261)</span><br>
+            <span>[00:15:35] [Server thread/INFO]: Pusheen__ joined the game</span><br>
+            <span>[00:23:02] [Server thread/INFO]: MaxsName lost connection: Disconnected</span><br>
+            <span>[00:23:02] [Server thread/INFO]: MaxsName left the game</span><br>
+            <span>[00:26:37] [Server thread/INFO]: Pusheen__ fell from a high place</span><br>
+            <span>[00:35:16] [Server thread/INFO]: Pusheen__ lost connection: Disconnected</span><br>
             <span>[00:04:41] [Server thread/INFO]: MaxsName was blown up by Creeper</span><br>
             <span>[00:05:39] [User Authenticator #134/INFO]: UUID of player Pusheen__ is
               736243fa-7159-4562-9197-58ceaf6b9a17</span><br>

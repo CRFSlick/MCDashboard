@@ -199,3 +199,30 @@ body {
     margin-top: 20px;
     /* text-align: center; */
 }
+
+/* .card-body.log {
+    height: 50vh;
+}*/
+
+.navbar {
+    height: 3.5rem;
+}
+
+.container-fluid.content {
+    height: calc(100vh - 3.5rem);
+    display: flex; /*added*/
+    flex-direction: column; /*added*/
+}
+
+/*
+.circle-reports {
+    height: 15rem;
+}*/
+
+.log-console {
+    /* height: 100%; */
+    /* margin-bottom: 1rem; */
+    /* overflow-y:auto; */
+    /* height: 30rem; */
+    overflow: hidden;
+}
