@@ -141,6 +141,11 @@ $(document).ready(function () {
         });
     }
 
+    setCircle('cpu', 2);
+    setCircle('ram', 79);
+    setCircle('disk', 23);
+    setCircle('players', 3);
+
 });
 
 function createReportCircle(id) {
