@@ -1,5 +1,14 @@
-# mc_dashboard
+# mc_dashboard [Work In Progress]
 A custom made dashboard for my minecraft server
+
+# Todo
+* Front End
+  * Create authentication system
+  * Create interface for console commands
+* Back End
+  * Add a way to access system usage
+  * Add access to docker
+  * Test for possible security issues
 
 # Sources
 https://github.com/thodorisbais/percircle
