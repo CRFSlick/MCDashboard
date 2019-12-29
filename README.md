@@ -1,5 +1,6 @@
 # mc_dashboard [Work In Progress]
 A custom made dashboard for my minecraft server
+
 ![mc_dashboard demo image](App/static/images/demo.PNG)
 
 # Todo
